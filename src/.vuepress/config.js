@@ -11,12 +11,9 @@ module.exports = {
         target: '_blank'
       }
     ],
-    sidebar: [
-      {
-        title: 'Guide',
-        children: ['Guide']
-      }
-    ],
+    sidebar: {
+      '/guide/': ['']
+    },
     displayAllHeaders: true,
     lastUpdated: 'Last Updated',
     repo: 'n3ustudio/NEUTRINO-Studio',
