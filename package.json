@@ -1,0 +1,48 @@
+{
+  "name": "n3ustudio-website",
+  "version": "0.1.0",
+  "description": "Website for NEUTRINO Studio.",
+  "author": "Il Harper",
+  "scripts": {
+    "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore . --fix",
+    "commit": "git cz",
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/eslint-module": "^1.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "git-cz": "^3.2.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.3.0",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": "eslint --ext .js,.vue,.ts --fix"
+  },
+  "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3ustudio/Website.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n3ustudio/Website/issues"
+  },
+  "homepage": "https://github.com/n3ustudio/Website#readme"
+}
